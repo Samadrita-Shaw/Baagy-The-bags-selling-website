@@ -1,0 +1,240 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(220, 248, 248);
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(56, 91, 235, 0.879);
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo{
+    margin: 6px 30px;
+}
+#logo img{
+    margin: 6px 10px;
+    border-radius: 30px;
+}
+
+/* List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 11px;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+#navbar ul li a:hover{
+    color: rgb(10, 5, 99);
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 365px;
+    margin: 18px;
+    padding: 10px 84px;
+}
+#home::before{
+    content: "";
+    background: url('../img1/bg.jpg') no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+#home h1{
+    text-align: center;
+    font-family: 'Norican', cursive;
+    color: rgb(3, 33, 57);
+}
+#home p{
+    font-size: 1.5rem;
+    font-family: 'Edu QLD Beginner', cursive;
+    text-align: center;
+    color: black;
+}
+
+/* Collections Section */
+#collections{
+    display: flex;
+    margin: 34px;
+}
+
+#collections .box{
+    border: 2px solid palevioletred;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+#collections .box img{
+    width: 378px;
+    height: 330px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+/* Clients Section */
+#client-section{
+    height: 400px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img1/clientsbg.jpeg') no-repeat center center/cover;
+    height: 350px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img{
+    width: 150px;
+    height: 150px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../img1/contactbg.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 570px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+#contact-box .btn{
+    display: block;
+    margin: auto;
+}
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3.2rem;
+    padding: 20px 5px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 20px 5px;
+}
+
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(9, 95, 152);
+    background-color: rgba(139, 236, 212, 0.821);
+    color: rgb(20, 4, 92);
+    border-radius: 30px;
+    font-size: 1.5rem;
+    margin: 17px;
+    cursor: pointer;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+.btn:hover {
+    background-color: rgb(24, 8, 73);
+    color: white;
+    border: 2px solid rgb(12, 141, 163);
+    width: 200px;
+}
+
+.btn1{
+    padding: 6px;
+    margin: auto;
+    display: block;
+    border: 1.5px solid plum;
+    border-radius: 12px;
+    background-color: rgb(165, 7, 104);
+    color: aliceblue;
+    font-size: 1rem;
+    font-family: 'Edu QLD Beginner', cursive;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    width: 90px;
+    background-color: aliceblue;
+    color: blueviolet;
+    border: 1.5px solid blueviolet;
+}
+
+h1, h2{
+    font-family: 'Norican', cursive;
+}
