@@ -1,5 +1,6 @@
 # Baagy-The-bags-selling-website
 ## This is the first self-made website, built after learning HTML and CSS to get a hands-on.
+***Visit the website here:*** https://samadrita-shaw.github.io/Baagy-The-bags-selling-website/
 ### Home page
 ![1](https://user-images.githubusercontent.com/88196245/178153170-8259f5ff-28dd-4d70-ae02-d0b9d820f97e.png)
 ### Our Collections page
